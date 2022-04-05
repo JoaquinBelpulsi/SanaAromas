@@ -3,13 +3,15 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: white;
 }
- 
+
 /*HEADER*/
 header {
     margin-top: 0;
@@ -39,6 +41,7 @@ header {
     margin: 0px;
     padding: 20px;
 }
+
 .top-container .buscador input {
     text-align: center;
     font-size: 15px;
@@ -48,8 +51,8 @@ header {
 }
 
 .top-container .logo {
-    margin: 0%;
-    padding: 00px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .top-container .logo img {
@@ -59,19 +62,12 @@ header {
     margin: 0px;
 }
 
-.top-container .subs {
-    margin: 0px;
-    padding: 20px;
-    border: 2px solid red;
-    font-size: 20px;
-}
-
 /*FIN TOP-MENU*/
 
 /*MENU*/
 .menu {
     background-color: rgb(230, 230, 230);
-    padding: o;
+    padding: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
     display: flex;
@@ -86,15 +82,16 @@ header {
 .menu {
     height: 100%;
 }
+
 nav {
     margin: 0px;
-    padding: 0;
+    padding: 0px;
     display: flex;
     justify-content: space-around;
     height: 100%;
 }
 
-.menu > nav > ul {
+.menu>nav>ul {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -103,13 +100,13 @@ nav {
     justify-content: center;
 }
 
-.menu > nav > ul > li {
+.menu>nav>ul>li {
     text-align: center;
     position: relative;
-    height: 100%; 
+    height: 100%;
 }
 
-.menu > nav > ul > li > a {
+.menu>nav>ul>li>a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -123,10 +120,11 @@ nav {
     padding: 15px 15px;
     transition: all 300ms ease;
 }
-.menu > nav > ul > li > a:hover {
+
+.menu>nav>ul>li>a:hover {
     transform: scale(1.1);
     background-color: #F6E3CA;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 /*SUBMENU*/
@@ -136,7 +134,7 @@ nav {
     flex-direction: column;
     list-style: none;
     background-color: white;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 80px;
     left: -5px;
@@ -146,12 +144,14 @@ nav {
     z-index: 10;
     transition: all 300ms ease;
 }
-.menu > nav > ul > li:hover > .submenu {
+
+.menu>nav>ul>li:hover>.submenu {
     visibility: visible;
     opacity: 1;
     top: 50px;
 }
-.submenu > li > a {
+
+.submenu>li>a {
     display: block;
     padding: 8px;
     color: black;
@@ -162,11 +162,12 @@ nav {
     text-transform: uppercase;
     transition: all 300ms ease;
 }
-.submenu > li > a:hover{
+
+.submenu>li>a:hover {
     background: #F6E3CA;
     color: black;
     transform: scale(1.0);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -202,6 +203,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    grid-area: card;
 }
 
 .container .card:hover {
@@ -284,6 +287,7 @@ footer {
 /*Redes*/
 .redes {
     max-width: 400px;
+    margin: 10px;
 }
 
 #redes h1 {
@@ -317,6 +321,7 @@ footer {
 /*Nosotros*/
 #nosotros {
     max-width: 400px;
+    margin: 10px;
 }
 
 #nosotros h1 {
@@ -341,6 +346,7 @@ footer {
 /*Mapa*/
 .mapa {
     max-width: 400px;
+    margin: 10px;
 }
 
 /*copyrigth*/
@@ -367,6 +373,7 @@ footer {
     padding: 4px;
     border-radius: 5px;
 }
+
 .metpag img {
     width: 50px;
     height: 30px;
@@ -393,31 +400,36 @@ footer {
 .container-prod {
     display: grid;
     grid-template-areas:
-    "nav productos productos"
-    "nav productos productos"
-    "nav productos productos"
+        "nav productos productos"
+        "nav productos productos"
+        "nav productos productos"
     ;
 }
+
 .productos {
-    background-color: aqua;
+    background-color: #F6E3CA;
     grid-area: productos;
 }
+
 .nav-prod {
-    background-color: red;
+    border: 1px solid black;
     grid-area: nav;
 }
+
 .nav-prod ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
+
 .nav-prod ul li {
     padding: 10px;
 }
+
 .nav-prod ul li a {
     font-family: 'Playfair Display', serif;
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 
@@ -425,7 +437,7 @@ footer {
     font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
 
 .ttpp {
@@ -438,34 +450,59 @@ footer {
     justify-content: center;
     padding: 10px;
     margin-bottom: 10px;
+
 }
+
 #pastillas h2 {
     font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: center;
     padding: 10px;
     margin-bottom: 10px;
+
 }
+
 #velas h2 {
     font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: center;
     padding: 10px;
     margin-bottom: 10px;
+
 }
+
 #oraculos h2 {
     font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: center;
     padding: 10px;
     margin-bottom: 10px;
+
+}
+
+.card1 {
+    margin: 5px;
+}
+
+.card2 {
+    margin: 5px;
+}
+
+.card3 {
+    margin: 5px;
+}
+
+.card4 {
+    margin: 5px;
 }
 
 .prod1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 /*FIN PRODUCTOS*/
 
 /*REIKI*/
@@ -478,12 +515,14 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
 .creiki {
     display: flex;
     align-items: stretch;
     justify-content: space-around;
     margin: 0px 0px;
 }
+
 .inforeiki {
     width: 40%;
     border: 1px solid red;
@@ -497,4 +536,17 @@ footer {
     padding: 15px 10px;
     margin: 0px 0px;
 }
+
 /*FIN REIKI*/
+
+@media only screen and (max-width: 1150px) {
+    .info {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .creiki {
+        display: block;
+        flex-wrap: wrap;
+    }
+}
