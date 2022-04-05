@@ -390,6 +390,37 @@ footer {
 /*FIN Footer*/
 
 /*Productos*/
+.container-prod {
+    display: grid;
+    grid-template-areas:
+    "nav productos productos"
+    "nav productos productos"
+    "nav productos productos"
+    ;
+}
+.productos {
+    background-color: aqua;
+    grid-area: productos;
+}
+.nav-prod {
+    background-color: red;
+    grid-area: nav;
+}
+.nav-prod ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-prod ul li {
+    padding: 10px;
+}
+.nav-prod ul li a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color:black;
+}
+
+
 .tittle {
     font-family: 'Playfair Display', serif;
     display: flex;
@@ -401,7 +432,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/*sahumerios*/
 #sahumerios h2 {
     font-family: 'Playfair Display', serif;
     display: flex;
@@ -436,7 +466,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 /*FIN PRODUCTOS*/
 
 /*REIKI*/
