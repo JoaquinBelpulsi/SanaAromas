@@ -174,7 +174,7 @@ nav {
 /*FIN HEADER*/
 
 /*Carrusel*/
-.container {
+.container-c {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -203,11 +203,9 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-    grid-area: card;
 }
 
-.container .card:hover {
+.container-c .card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
@@ -225,18 +223,18 @@ nav {
     justify-content: center;
 }
 
-.container .card1 {
+.container-c .card1 {
     margin-bottom: 0px;
 }
 
 .card img {
-    width: 280px;
+    width: 300px;
     height: 300px;
     padding: 0px;
     margin-bottom: 10px;
 }
 
-.container .card img a {
+.container-c .card img a {
     margin: 0px;
 }
 
@@ -271,6 +269,10 @@ footer {
     width: 100%;
 }
 
+.container {
+    background-color: #F6E3CA;
+}
+
 .container-all {
     width: 100%;
     margin: auto;
@@ -286,7 +288,6 @@ footer {
 
 /*Redes*/
 .redes {
-    max-width: 400px;
     margin: 10px;
 }
 
@@ -299,18 +300,18 @@ footer {
     border-bottom: 2px solid black;
 }
 
-#redes .row {
+#redes .fila {
     margin-top: 20px;
     display: flex;
     padding: 5px;
 }
 
-#redes .row img {
+#redes .fila img {
     width: 35px;
     height: 35px;
 }
 
-#redes .row label {
+#redes .fila label {
     margin-top: 10px;
     margin-left: 10px;
     padding-left: 5px;
@@ -345,7 +346,6 @@ footer {
 
 /*Mapa*/
 .mapa {
-    max-width: 400px;
     margin: 10px;
 }
 
