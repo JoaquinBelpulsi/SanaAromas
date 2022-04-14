@@ -194,7 +194,7 @@ nav {
     padding-bottom: 0px;
     border-top: 1px solid rgb(199, 199, 199);
 
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     text-align: center;
@@ -203,6 +203,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .container-c .card:hover {
@@ -223,7 +224,7 @@ nav {
     justify-content: center;
 }
 
-.container-c .card1 {
+.container-c .card {
     margin-bottom: 0px;
 }
 
@@ -234,7 +235,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.container-c .card img a {
+.container-c > .card > img a {
     margin: 0px;
 }
 
@@ -490,6 +491,9 @@ footer {
     margin: 5px;
 }
 
+.card1 > img {
+    width: 100px;
+}
 .prod1 {
     display: flex;
     justify-content: space-around;
@@ -500,16 +504,6 @@ footer {
 /*FIN PRODUCTOS*/
 
 /*REIKI*/
-.backr {
-    margin-top: 20px;
-    padding: 20px;
-    background-image: url(../SANA/multimedia/Reiki/reiki2.jpg);
-    background-position-x: 0px;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
 .creiki {
     display: flex;
     align-items: stretch;
@@ -532,15 +526,3 @@ footer {
 }
 
 /*FIN REIKI*/
-
-@media only screen and (max-width: 1150px) {
-    .info {
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .creiki {
-        display: block;
-        flex-wrap: wrap;
-    }
-}
