@@ -336,6 +336,7 @@ footer {
 }
 
 #nosotros p {
+    font-family: 'Playfair Display', serif;
     font-size: 15px;
     margin-top: 20px;
     text-align: center;
