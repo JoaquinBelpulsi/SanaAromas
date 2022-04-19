@@ -1,0 +1,111 @@
+/*Productos*/
+.container-prod {
+    display: grid;
+    grid-template-areas:
+        "nav productos productos"
+        "nav productos productos"
+        "nav productos productos"
+    ;
+}
+
+.productos {
+    background-color: #F6E3CA;
+    grid-area: productos;
+}
+
+.nav-prod {
+    border: 1px solid black;
+    grid-area: nav;
+}
+
+.nav-prod ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-prod ul li {
+    padding: 10px;
+}
+
+.nav-prod ul li a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+.tittle {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.ttpp {
+    margin-bottom: 10px;
+}
+
+#sahumerios h2 {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+#pastillas h2 {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+#velas h2 {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+#oraculos h2 {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.card1 {
+    margin: 5px;
+}
+
+.card2 {
+    margin: 5px;
+}
+
+.card3 {
+    margin: 5px;
+}
+
+.card4 {
+    margin: 5px;
+}
+
+.card1 > img {
+    width: 100px;
+}
+.prod1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*FIN PRODUCTOS*/

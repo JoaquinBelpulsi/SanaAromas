@@ -1,529 +1,401 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: white;
-}
-
 /*HEADER*/
 header {
-    margin-top: 0;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
 }
 
 /*TOP MENU*/
 .top-container-all {
-    background-color: rgb(230, 230, 230);
-    padding: 0px;
-    margin-bottom: 0px;
-    margin: 0px;
-    width: 100%;
+  background-color: rgb(230, 230, 230);
+  padding: 0px;
+  margin-bottom: 0px;
+  margin: 0px;
+  width: 100%;
 }
 
 .top-container {
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .top-container .buscador {
-    margin: 0px;
-    padding: 20px;
+  margin: 0px;
+  padding: 20px;
 }
 
 .top-container .buscador input {
-    text-align: center;
-    font-size: 15px;
-    border-radius: 10px;
-    padding: 10px;
-    border: 1px solid black;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
 }
 
 .top-container .logo {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .top-container .logo img {
-    width: 100px;
-    height: 100px;
-    padding: 0px;
-    margin: 0px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*FIN TOP-MENU*/
-
-/*MENU*/
-.menu {
-    background-color: rgb(230, 230, 230);
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    border-top: 1px solid black;
-    z-index: 1;
-}
-
 /*Lista horizontal*/
 .menu {
-    height: 100%;
+  height: 100%;
 }
 
 nav {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
 }
 
-.menu>nav>ul {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.menu > nav > ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
-.menu>nav>ul>li {
-    text-align: center;
-    position: relative;
-    height: 100%;
+.menu > nav > ul > li {
+  text-align: center;
+  position: relative;
+  height: 100%;
 }
 
-.menu>nav>ul>li>a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-family: 'Playfair Display', serif;
-
-    width: 100%;
-    height: 100%;
-    color: black;
-    padding: 15px 15px;
-    transition: all 300ms ease;
+.menu > nav > ul > li > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding: 15px 15px;
+  transition: all 300ms ease;
 }
 
-.menu>nav>ul>li>a:hover {
-    transform: scale(1.1);
-    background-color: #F6E3CA;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+.menu > nav > ul > li > a:hover {
+  transform: scale(1.1);
+  background-color: #F6E3CA;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 /*SUBMENU*/
 .submenu {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 80px;
-    left: -5px;
-    padding: 15px 0px;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 10;
-    transition: all 300ms ease;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 80px;
+  left: -5px;
+  padding: 15px 0px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: all 300ms ease;
 }
 
-.menu>nav>ul>li:hover>.submenu {
-    visibility: visible;
-    opacity: 1;
-    top: 50px;
+.menu > nav > ul > li:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
 }
 
-.submenu>li>a {
-    display: block;
-    padding: 8px;
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: 'Playfair Display', serif;
-
-    text-transform: uppercase;
-    transition: all 300ms ease;
+.submenu > li > a {
+  display: block;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  transition: all 300ms ease;
 }
 
-.submenu>li>a:hover {
-    background: #F6E3CA;
-    color: black;
-    transform: scale(1.0);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+.submenu > li > a:hover {
+  background: #F6E3CA;
+  color: black;
+  transform: scale(1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-
-/*FIN HEADER*/
-
-/*Carrusel*/
-.container-c {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-}
-
-.list {
-    padding: 20px;
-}
-
-.card {
-    background-color: white;
-    width: 250px;
-    height: 430px;
-    margin: 15px 40px;
-    padding-bottom: 0px;
-    border-top: 1px solid rgb(199, 199, 199);
-
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.25s;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.container-c .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    font-size: 17px;
-    font-family: 'Playfair Display', serif;
-    font-weight: bolder;
-    background-color: #F6E3CA;
-    padding: 8px;
-    border-radius: 5px;
-    margin: 10px 22px 10px 22px;
-
-    display: flex;
-    justify-content: center;
-}
-
-.container-c .card {
-    margin-bottom: 0px;
-}
-
-.card img {
-    width: 300px;
-    height: 300px;
-    padding: 0px;
-    margin-bottom: 10px;
-}
-
-.container-c > .card > img a {
-    margin: 0px;
-}
-
-.card button {
-    background-color: #F6E3CA;
-    border-width: 0px;
-    border-radius: 5px;
-    padding: 8px;
-    margin-bottom: 20px;
-
-}
-
-.card button a {
-    padding: 0px;
-    text-decoration: none;
-    color: black;
-}
-
-/*FIN Carrusel*/
 
 /*FOOTER*/
 footer {
-    margin-top: 30px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-color: #F6E3CA;
+  margin-top: 30px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #F6E3CA;
 }
 
 .container {
-    background-color: #F6E3CA;
+  background-color: #F6E3CA;
 }
 
 .container-all {
-    width: 100%;
-    margin: auto;
-    padding: 0px;
+  width: 100%;
+  margin: auto;
+  padding: 0px;
 }
 
 .info {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 20px;
 }
 
 /*Redes*/
 .redes {
-    margin: 10px;
+  margin: 10px;
 }
 
 #redes h1 {
-    font-size: 22px;
-    font-family: 'Playfair Display', serif;
-    font-weight: bolder;
-    text-align: center;
-    padding: 10px;
-    border-bottom: 2px solid black;
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid black;
 }
 
 #redes .fila {
-    text-align: center;
-    margin-top: 20px;
-    padding: 5px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 #redes .fila img {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 #redes .fila label {
-    margin-top: 10px;
-    margin-left: 10px;
-    padding-left: 5px;
-    padding-right: 20px;
-    border-right: 2px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 20px;
+  border-right: 2px solid black;
 }
 
 /*Nosotros*/
 #nosotros {
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 #nosotros h1 {
-    font-size: 22px;
-    font-family: 'Playfair Display', serif;
-    font-weight: bolder;
-    text-align: center;
-    padding: 10px;
-    margin: 0px;
-    border-bottom: 2px solid black;
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  border-bottom: 2px solid black;
 }
 
 #nosotros p {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    margin-top: 20px;
-    text-align: center;
-    padding: 10px;
-    margin: 0px;
-    border-right: 2px solid black;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  border-right: 2px solid black;
 }
 
 /*Mapa*/
 .mapa {
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 /*copyrigth*/
 .copyfooter {
-    background-color: rgb(59, 59, 59);
-    align-items: center;
-    padding: 5px 5px;
-    margin: 0px;
-    border-radius: 5px;
+  background-color: rgb(59, 59, 59);
+  align-items: center;
+  padding: 5px 5px;
+  margin: 0px;
+  border-radius: 5px;
 }
 
 .copyfooter h4 {
-    font-size: 14px;
-    font-family: 'Playfair Display', serif;
-    padding: 10px;
-    margin: 0px;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  padding: 10px;
+  margin: 0px;
 }
 
 .metpag {
-    text-align: center;
-    background-color: white;
-    padding: 4px;
-    border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  padding: 4px;
+  border-radius: 5px;
 }
 
 .metpag img {
-    width: 50px;
-    height: 30px;
-    margin: 5px;
+  width: 50px;
+  height: 30px;
+  margin: 5px;
 }
 
 .redesfooter {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px;
-    padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
 }
 
 .redesfooter img {
-    width: 35px;
-    height: 35px;
-    padding: 0px;
-    margin: 5px;
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+  margin: 5px;
 }
 
 /*FIN Footer*/
-
 /*Productos*/
 .container-prod {
-    display: grid;
-    grid-template-areas:
-        "nav productos productos"
-        "nav productos productos"
-        "nav productos productos"
-    ;
+  display: grid;
+  grid-template-areas: "nav productos productos" "nav productos productos" "nav productos productos";
 }
 
 .productos {
-    background-color: #F6E3CA;
-    grid-area: productos;
+  background-color: #F6E3CA;
+  grid-area: productos;
 }
 
 .nav-prod {
-    border: 1px solid black;
-    grid-area: nav;
+  border: 1px solid black;
+  grid-area: nav;
 }
 
 .nav-prod ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .nav-prod ul li {
-    padding: 10px;
+  padding: 10px;
 }
 
 .nav-prod ul li a {
-    font-family: 'Playfair Display', serif;
-    text-decoration: none;
-    color: black;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  color: black;
 }
 
-
 .tittle {
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .ttpp {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #sahumerios h2 {
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 10px;
-
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 #pastillas h2 {
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 10px;
-
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 #velas h2 {
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 10px;
-
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 #oraculos h2 {
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 10px;
-
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .card1 {
-    margin: 5px;
+  margin: 5px;
 }
 
 .card2 {
-    margin: 5px;
+  margin: 5px;
 }
 
 .card3 {
-    margin: 5px;
+  margin: 5px;
 }
 
 .card4 {
-    margin: 5px;
+  margin: 5px;
 }
 
 .card1 > img {
-    width: 100px;
+  width: 100px;
 }
+
 .prod1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /*FIN PRODUCTOS*/
-
 /*REIKI*/
 .creiki {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-around;
-    margin: 0px 0px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 0px 0px;
 }
 
 .inforeiki {
-    width: 40%;
-    border: 1px solid red;
-    margin: 100px 0px;
-    padding: 0px;
+  width: 40%;
+  border: 1px solid red;
+  margin: 100px 0px;
+  padding: 0px;
 }
 
 .inforeiki h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    padding: 15px 10px;
-    margin: 0px 0px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  padding: 15px 10px;
+  margin: 0px 0px;
 }
 
 /*FIN REIKI*/

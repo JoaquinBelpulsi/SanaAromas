@@ -1,0 +1,51 @@
+/*HEADER*/
+header {
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+/*TOP MENU*/
+.top-container-all {
+    background-color: rgb(230, 230, 230);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.top-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-container .buscador {
+    margin: 0px;
+    padding: 20px;
+}
+
+.top-container .buscador input {
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.top-container .logo {
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-container .logo img {
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*FIN TOP-MENU*/
