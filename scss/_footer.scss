@@ -30,7 +30,7 @@ footer {
 
 #redes h1 {
     font-size: 22px;
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     font-weight: bolder;
     text-align: center;
     padding: 10px;
@@ -64,7 +64,7 @@ footer {
 
 #nosotros h1 {
     font-size: 22px;
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     font-weight: bolder;
     text-align: center;
     padding: 10px;
@@ -73,7 +73,7 @@ footer {
 }
 
 #nosotros p {
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     font-size: 15px;
     margin-top: 20px;
     text-align: center;
@@ -99,7 +99,7 @@ footer {
 
 .copyfooter h4 {
     font-size: 14px;
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     padding: 10px;
     margin: 0px;
 }

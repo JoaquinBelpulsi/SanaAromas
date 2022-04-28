@@ -29,14 +29,14 @@
 }
 
 .nav-prod ul li a {
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     text-decoration: none;
     color: black;
 }
 
 
 .tittle {
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -47,7 +47,7 @@
 }
 
 #sahumerios h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -56,7 +56,7 @@
 }
 
 #pastillas h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -65,7 +65,7 @@
 }
 
 #velas h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -74,7 +74,7 @@
 }
 
 #oraculos h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: $cursi;
     display: flex;
     justify-content: center;
     padding: 10px;
