@@ -1,3 +1,10 @@
+@mixin flexbox ($display, $jc, $direction, $ai) {
+    display: $display;
+    justify-content: $jc;
+    flex-direction: $direction;
+    align-items: $ai;
+}
+
 /*HEADER*/
 header {
     margin-top: 0;
@@ -18,9 +25,7 @@ header {
 
 .top-container {
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flexbox(flex, space-around, row,center);
 }
 
 .top-container .buscador {

@@ -1,3 +1,10 @@
+@mixin flexbox ($display, $jc, $direction, $ai) {
+    display: $display;
+    justify-content: $jc;
+    flex-direction: $direction;
+    align-items: $ai;
+}
+
 /*Lista horizontal*/
 .menu {
     height: 100%;
@@ -6,8 +13,7 @@
 nav {
     margin: 0px;
     padding: 0px;
-    display: flex;
-    justify-content: space-around;
+    @include flexbox(flex, space-around);
     height: 100%;
 }
 
@@ -16,8 +22,7 @@ nav {
     padding: 0;
     height: 100%;
     list-style: none;
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
 }
 
 .menu>nav>ul>li {
@@ -27,8 +32,7 @@ nav {
 }
 
 .menu>nav>ul>li>a {
-    display: flex;
-    align-items: center;
+    @include flexbox(flex, flex-start, row, center);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
@@ -49,9 +53,8 @@ nav {
 
 /*SUBMENU*/
 .submenu {
+    @include flexbox(flex, column);
     width: 150px;
-    display: flex;
-    flex-direction: column;
     list-style: none;
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);

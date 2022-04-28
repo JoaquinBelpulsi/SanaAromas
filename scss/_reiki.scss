@@ -1,8 +1,13 @@
+@mixin flexbox ($display, $jc, $direction, $ai) {
+    display: $display;
+    justify-content: $jc;
+    flex-direction: $direction;
+    align-items: $ai;
+}
+
 /*REIKI*/
 .creiki {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-around;
+    @include flexbox(flex, space-around, row, stretch);
     margin: 0px 0px;
 
     .inforeiki {

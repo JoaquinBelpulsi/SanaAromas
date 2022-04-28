@@ -1,3 +1,10 @@
+@mixin flexbox ($display, $jc, $direction, $ai) {
+    display: $display;
+    justify-content: $jc;
+    flex-direction: $direction;
+    align-items: $ai;
+}
+
 /*Productos*/
 .container-prod {
     display: grid;
@@ -37,8 +44,7 @@
 
 .tittle {
     font-family: $cursi;
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
     margin-bottom: 10px;
 }
 
@@ -48,8 +54,7 @@
 
 #sahumerios h2 {
     font-family: $cursi;
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
     padding: 10px;
     margin-bottom: 10px;
 
@@ -57,8 +62,7 @@
 
 #pastillas h2 {
     font-family: $cursi;
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
     padding: 10px;
     margin-bottom: 10px;
 
@@ -66,8 +70,7 @@
 
 #velas h2 {
     font-family: $cursi;
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
     padding: 10px;
     margin-bottom: 10px;
 
@@ -75,8 +78,7 @@
 
 #oraculos h2 {
     font-family: $cursi;
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
     padding: 10px;
     margin-bottom: 10px;
 
@@ -102,9 +104,7 @@
     width: 100px;
 }
 .prod1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flexbox(flex, space-around, row, center);
     flex-wrap: wrap;
 }
 

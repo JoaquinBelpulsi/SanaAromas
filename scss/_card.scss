@@ -1,7 +1,13 @@
+@mixin flexbox ($display, $jc, $direction, $ai) {
+    display: $display;
+    justify-content: $jc;
+    flex-direction: $direction;
+    align-items: $ai;
+}
+
 /*Carrusel*/
 .container-c {
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
     padding: 20px;
     margin-bottom: 10px;
     flex-wrap: wrap;
@@ -25,10 +31,7 @@
     text-align: center;
     transition: all 0.25s;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include flexbox(flex, space-around, column, center);
 }
 
 .container-c .card:hover {
@@ -45,8 +48,7 @@
     border-radius: 5px;
     margin: 10px 22px 10px 22px;
 
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
 }
 
 .container-c .card {

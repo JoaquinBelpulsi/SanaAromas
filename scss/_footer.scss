@@ -1,3 +1,10 @@
+@mixin flexbox ($display, $jc, $direction, $ai) {
+    display: $display;
+    justify-content: $jc;
+    flex-direction: $direction;
+    align-items: $ai;
+}
+
 /*FOOTER*/
 footer {
     margin-top: 30px;
@@ -17,8 +24,7 @@ footer {
 }
 
 .info {
-    display: flex;
-    justify-content: space-around;
+    @include flexbox(flex, space-around);
     margin: 0;
     padding: 20px;
 }
@@ -118,8 +124,7 @@ footer {
 }
 
 .redesfooter {
-    display: flex;
-    justify-content: flex-end;
+    @include flexbox(flex, flex-end);
     margin: 0px;
     padding: 0px;
 }
