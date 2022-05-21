@@ -53,15 +53,25 @@ header {
   text-align: center;
 }
 
+.logo {
+  text-align: center;
+}
+
+.busc {
+  text-align: center;
+}
+
 /*FIN TOP-MENU*/
 /*Lista horizontal*/
 .menu {
+  background-color: white;
   height: 100%;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
-nav {
+.navmenu {
   margin: 0px;
   padding: 0px;
   display: flex;
