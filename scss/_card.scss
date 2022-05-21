@@ -41,14 +41,14 @@
 
 .card h3 {
     font-size: 17px;
-    font-family: $cursi;
+    font-family: 'Playfair Display', serif;
     font-weight: bolder;
     background-color: #F6E3CA;
     padding: 8px;
     border-radius: 5px;
     margin: 10px 22px 10px 22px;
 
-    @include flexbox(flex, center);
+    @include flexbox(flex, center, row, center);
 }
 
 .container-c .card {

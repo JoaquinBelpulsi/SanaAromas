@@ -24,7 +24,7 @@ footer {
 }
 
 .info {
-    @include flexbox(flex, space-around);
+    @include flexbox(flex, space-around, row, center);
     margin: 0;
     padding: 20px;
 }
@@ -124,7 +124,7 @@ footer {
 }
 
 .redesfooter {
-    @include flexbox(flex, flex-end);
+    @include flexbox(flex, flex-end, row, center);
     margin: 0px;
     padding: 0px;
 }
