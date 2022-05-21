@@ -7,7 +7,7 @@
 
 /*Carrusel*/
 .container-c {
-    @include flexbox(flex, center);
+    @include flexbox(flex, center, row, center);
     padding: 20px;
     margin-bottom: 10px;
     flex-wrap: wrap;

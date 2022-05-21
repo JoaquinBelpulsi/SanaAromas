@@ -15,7 +15,7 @@
 nav {
     margin: 0px;
     padding: 0px;
-    @include flexbox(flex, space-around);
+    @include flexbox(flex, space-around, row, center);
     height: 100%;
 }
 
@@ -24,7 +24,7 @@ nav {
     padding: 0;
     height: 100%;
     list-style: none;
-    @include flexbox(flex, center);
+    @include flexbox(flex, center, row, center);
 }
 
 .menu>nav>ul>li {
@@ -38,7 +38,7 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
-    font-family: $cursi;
+    font-family: 'Playfair Display', serif;
 
     width: 100%;
     height: 100%;
@@ -55,7 +55,7 @@ nav {
 
 /*SUBMENU*/
 .submenu {
-    @include flexbox(flex, column);
+    @include flexbox(flex, center ,column, center);
     width: 150px;
     list-style: none;
     background-color: white;
@@ -82,7 +82,7 @@ nav {
     color: black;
     text-decoration: none;
     font-size: 14px;
-    font-family: $cursi;
+    font-family: 'Playfair Display', serif;
 
     text-transform: uppercase;
     transition: all 300ms ease;
