@@ -45,7 +45,7 @@
 
 .tittle {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center);
+    @include flexbox(flex, center, row, center);
     margin-bottom: 10px;
 }
 
@@ -55,7 +55,7 @@
 
 #sahumerios h2 {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center);
+    @include flexbox(flex, center, row, center);
     padding: 10px;
     margin-bottom: 10px;
 
@@ -63,7 +63,7 @@
 
 #pastillas h2 {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center);
+    @include flexbox(flex, center, row, center);
     padding: 10px;
     margin-bottom: 10px;
 
@@ -71,7 +71,7 @@
 
 #velas h2 {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center);
+    @include flexbox(flex, center, row, center);
     padding: 10px;
     margin-bottom: 10px;
 
@@ -79,7 +79,7 @@
 
 #oraculos h2 {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center);
+    @include flexbox(flex, center, row, center);
     padding: 10px;
     margin-bottom: 10px;
 
