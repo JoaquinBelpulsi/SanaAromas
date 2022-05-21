@@ -449,6 +449,18 @@ footer {
   margin: 5px;
 }
 
+@media screen and (max-width: 700px) {
+  .copyfooter {
+    text-align: center;
+  }
+
+  .redesfooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 /*FIN Footer*/
 /*Productos*/
 .container-prod {
