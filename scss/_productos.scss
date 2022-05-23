@@ -40,6 +40,7 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
+    border-top: solid 1px black;
 }
 
 .nav-prod ul li {
@@ -56,7 +57,8 @@
 .tittle {
     font-family: 'Playfair Display', serif;
     @include flexbox(flex, center, row, center);
-    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #F6E3CA;
 }
 
 .ttpp {
@@ -65,7 +67,7 @@
 
 .catego {
     @include flexbox(flex, flex-start, row, center);
-    padding: 2px;
+    padding: 20px;
     margin-left: 20px;
 }
 
