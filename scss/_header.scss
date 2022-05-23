@@ -20,6 +20,13 @@ header {
 
 .logo {
     font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: black;
+}
+
+.logo:hover {
+    color:  #F6E3CA;
+    transition-delay: 100ms;
 }
 
 .boton-busc:hover {

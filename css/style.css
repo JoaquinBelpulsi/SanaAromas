@@ -21,6 +21,13 @@ header {
 
 .logo {
   font-family: "Playfair Display", serif;
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  color: #F6E3CA;
+  transition-delay: 100ms;
 }
 
 .boton-busc:hover {
@@ -223,8 +230,8 @@ img {
   height: 430px;
   margin: 15px 40px;
   padding-bottom: 0px;
+  padding: 0px;
   border-top: 1px solid rgb(199, 199, 199);
-  border: solid 1px red;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -234,6 +241,11 @@ img {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+}
+
+.card11 {
+  padding: 0px;
+  margin: 0px;
 }
 
 .container-c .card:hover {
