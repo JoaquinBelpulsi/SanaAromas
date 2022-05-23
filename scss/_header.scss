@@ -22,8 +22,14 @@ header {
     font-family: 'Playfair Display', serif;
 }
 
-.busc {
-    text-align: center;
+.boton-busc:hover {
+    background-color: #F6E3CA;
 }
+
+.busc {
+    display: flex;
+    justify-content: center;
+}
+
 
 /*FIN TOP-MENU*/

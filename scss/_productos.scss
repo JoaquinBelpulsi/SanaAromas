@@ -23,10 +23,20 @@
 .nav-prod {
     border: 1px solid black;
     grid-area: nav;
-    margin-top: 20px;
+    margin-top: 0px;
+}
+
+.nav-prod-ul {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+    position: sticky;
+    top: 55px;
 }
 
 .nav-prod ul {
+    margin-right: 20px;
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -53,31 +63,41 @@
     margin-bottom: 10px;
 }
 
+.catego {
+    @include flexbox(flex, flex-start, row, center);
+    padding: 2px;
+    margin-left: 20px;
+}
+
 #sahumerios h2 {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center, row, center);
+    font-size: 25px;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #pastillas h2 {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center, row, center);
+    font-size: 25px;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #velas h2 {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center, row, center);
+    font-size: 25px;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #oraculos h2 {
     font-family: 'Playfair Display', serif;
-    @include flexbox(flex, center, row, center);
+    font-size: 25px;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
