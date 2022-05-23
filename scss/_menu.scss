@@ -125,8 +125,8 @@ img {
 }
 @media screen and (max-width:700px){
     .menu>nav>ul {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
         width: 100%;
         list-style: none;
         @include flexbox(flex, center, column, center);

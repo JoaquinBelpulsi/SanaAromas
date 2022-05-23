@@ -168,8 +168,8 @@ img {
 
 @media screen and (max-width: 700px) {
   .menu > nav > ul {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     list-style: none;
     display: flex;
@@ -298,7 +298,7 @@ img {
 
 /*FOOTER*/
 footer {
-  margin-top: 30px;
+  margin-top: 25px;
   padding: 0px;
   box-sizing: border-box;
   background-color: #F6E3CA;
@@ -500,6 +500,11 @@ footer {
   margin-top: 3px;
 }
 
+@media screen and (max-width: 700px) {
+  .tittle {
+    margin-top: 0px;
+  }
+}
 .ttpp {
   margin-bottom: 10px;
 }
@@ -509,8 +514,8 @@ footer {
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
-  margin-left: 20px;
+  padding: 40px;
+  margin-left: 0px;
 }
 
 #sahumerios h2 {
@@ -604,6 +609,13 @@ footer {
   font-size: 20px;
   padding: 15px 10px;
   margin: 0px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  .creiki {
+    margin: 0px;
+    border-radius: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

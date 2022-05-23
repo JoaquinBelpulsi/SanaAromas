@@ -62,14 +62,20 @@
     margin-top: 3px;
 }
 
+@media screen and (max-width:700px){
+    .tittle {
+        margin-top: 0px;
+    }
+}
+
 .ttpp {
     margin-bottom: 10px;
 }
 
 .catego {
     @include flexbox(flex, flex-start, row, center);
-    padding: 20px;
-    margin-left: 20px;
+    padding: 40px;
+    margin-left: 0px;
 }
 
 #sahumerios h2 {
